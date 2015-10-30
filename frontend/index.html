@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu" ng-app="app">
+<head>
+
+<base href="/">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title></title>
+<meta property="og:title" content="">
+<meta property="og:site_name" content="">
+<meta property="og:url" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+
+<!-- inject:css -->
+<!-- endinject -->
+
+</head>
+<body ng-controller="page" ng-class="pageClass">
+
+<header>
+	<nav class="navbar navbar-default" ng-controller="navigation">
+		<button type="button" ng-click="isCollapsed = !isCollapsed" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div id="navbar" uib-collapse="isCollapsed" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li ng-class="{active: activeClass=='/'}"><a href="/">Főoldal</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<main ng-view></main>
+
+<footer class="footer">
+
+</footer>
+
+<!-- Google Analytics -->
+<script>
+	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	e.src='https://www.google-analytics.com/analytics.js';
+	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','','auto');
+</script>
+
+<!-- vendor:js -->
+<!-- endinject -->
+
+<!-- inject:js -->
+<!-- endinject -->
+
+</body>
+</html>

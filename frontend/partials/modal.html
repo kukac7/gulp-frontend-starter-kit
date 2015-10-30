@@ -1,0 +1,22 @@
+<div ng-switch on="selection" class="modal-body">
+	<div ng-switch-when="galleryImg" class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+				<p class="text-center"><button ng-click="close()" class="btn btn-close">Bezár</button></p>
+				<img ng-src="{{imgData.file}}" class="img-responsive">
+				<div class="panel-body">
+					<span>{{imgData.created_at}}</span>
+					<h1>{{imgData.user.ig_name}}</h1>
+					<p ng-if="imgData.text">{{imgData.text}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div ng-switch-when="errorModal" class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<p>{{error}}</p>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.x",
+    "angular-bootstrap": "0.14.x",
+    "angular-resource": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-sanitize": "1.4.x",
+    "angular-cookies": "1.4.x",
+    "angular": "1.4.x",
+    "console-polyfill": "*",
+    "ng-phpdebugbar": "*",
+    "raven-js": "*",
+    "angulartics": "0.x",
+    "angulartics-google-analytics": "*"
+  },
+  "ignore": [
+    "**/.*",
+    "build",
+    "speed",
+    "test",
+    "dist"
+  ]
+}
